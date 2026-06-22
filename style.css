@@ -1,4 +1,4 @@
-﻿
+
    
     /* ─── RESET & TOKENS ─── */
     *, *::before, *::after
@@ -89,7 +89,7 @@ body::before {
 
 /* ─── NAV ─── */
 nav {
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -118,7 +118,11 @@ nav {
     text-decoration: none;
 }
 
-
+.nav-links {
+    display: flex;
+    gap: 36px;
+    list-style: none;
+}
 
     .nav-links a {
         font-size: .78rem;
@@ -1028,29 +1032,6 @@ footer {
     }
 }
 
-@media (max-width: 768px) {
-
-    nav {
-        position: fixed;
-    }
-
-    .nav-links {
-        display: flex;
-        flex-direction: column;
-        gap: 18px;
-
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-
-        background: rgba(7, 7, 15, 0.95);
-        backdrop-filter: blur(15px);
-
-        padding: 20px 6%;
-        z-index: 999;
-    }
-}
 
 
 
