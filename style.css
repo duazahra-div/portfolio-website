@@ -118,11 +118,7 @@ nav {
     text-decoration: none;
 }
 
-.nav-links {
-    display: flex;
-    gap: 36px;
-    list-style: none;
-}
+
 
     .nav-links a {
         font-size: .78rem;
@@ -1032,6 +1028,16 @@ footer {
     }
 }
 
+@media (max-width: 768px) {
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+    }
+}
 
 
 
